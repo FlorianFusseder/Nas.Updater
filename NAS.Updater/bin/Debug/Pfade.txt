@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSpeicherPfadCombo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" z:Size="3" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/NAS.Updater">
+    <SpeicherPfadCombo z:Id="2">
+        <Lokal z:Id="3">C:\Users\Florian\Desktop\Projects</Lokal>
+        <Nas z:Id="4">\\BANANA-NAS\BackupRechner\Projects</Nas>
+    </SpeicherPfadCombo>
+    <SpeicherPfadCombo z:Id="5">
+        <Lokal z:Id="6">D:\Dropbox</Lokal>
+        <Nas z:Id="7">\\BANANA-NAS\BackupRechner\Dropbox</Nas>
+    </SpeicherPfadCombo>
+    <SpeicherPfadCombo z:Id="8">
+        <Lokal z:Id="9">C:\Users\Florian\Desktop\Bank</Lokal>
+        <Nas z:Id="10">\\BANANA-NAS\BackupRechner\Bank</Nas>
+    </SpeicherPfadCombo>
+</ArrayOfSpeicherPfadCombo>
