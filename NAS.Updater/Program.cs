@@ -22,7 +22,7 @@ namespace NAS.Updater
             list = list.Distinct().ToList();
 
 
-            if (args.Count() > 0)
+            if (args.Any())
             {
 
                 if (args.ElementAt(0) == "man")

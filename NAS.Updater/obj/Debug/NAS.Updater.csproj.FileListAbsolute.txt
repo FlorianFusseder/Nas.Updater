@@ -11,7 +11,6 @@ C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\obj\Debug
 C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\obj\Debug\NAS.Updater.pdb
 C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\bin\Debug\NAS.Updater.exe
 C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\bin\Debug\NAS.Updater.pdb
-C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\bin\Debug\Persistenz.dll
 C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\bin\Debug\Persistenz.pdb
 C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\obj\Debug\NAS.Updater.csprojResolveAssemblyReference.cache
 C:\Users\Florian\Desktop\Projects\C#\C# Selbst\NAS.Updater\NAS.Updater\obj\Debug\NAS.Updater.Properties.Resources.resources

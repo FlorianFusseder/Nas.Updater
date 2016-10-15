@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NAS.Updater
@@ -16,6 +11,7 @@ namespace NAS.Updater
 
         [DataMember]
         public string Lokal { get; set; }
+
         [DataMember]
         public string Nas { get; set; }
 

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using NAS.Updater.Properties;
 
 namespace NAS.Updater
 {
@@ -25,7 +21,7 @@ namespace NAS.Updater
             }
             catch (Exception e)
             {
-                MessageBox.Show($"An exception occured");
+                MessageBox.Show(Resources.FileAktualisiererCommand_Execute_An_exception_occured);
                 Logger.WriteFailureLine("");
                 Logger.WriteFailureLine($"1. InnerException:    {e.InnerException}");
                 Logger.WriteFailureLine($"2. Message:           {e.Message}");

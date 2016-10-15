@@ -121,4 +121,7 @@
   <data name="Iconmuseo_Mechanic_Folders_Arm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Iconmuseo-Mechanic-Folders-Arm.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FileAktualisiererCommand_Execute_An_exception_occured" xml:space="preserve">
+    <value>An exception occured</value>
+  </data>
 </root>

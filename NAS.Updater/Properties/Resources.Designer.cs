@@ -61,6 +61,15 @@ namespace NAS.Updater.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An exception occured.
+        /// </summary>
+        internal static string FileAktualisiererCommand_Execute_An_exception_occured {
+            get {
+                return ResourceManager.GetString("FileAktualisiererCommand_Execute_An_exception_occured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Iconmuseo_Mechanic_Folders_Arm {

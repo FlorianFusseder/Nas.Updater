@@ -1,38 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NAS.Updater
 {
-    static class Logger
+    public static class Logger
     {
-        static private object LoggerLock = new object();
-        static private readonly string log = @"log.txt";
-        static private readonly string fehlerLog = @"fehler.txt";
-        static private readonly string start = $@"___________New Session {DateTime.Now}_______________________________________________________________________________";
+        private static readonly object LoggerLock = new object();
+        private const string Log = @"log.txt";
+        private const string FehlerLog = @"fehler.txt";
+        private static readonly string Start = $@"___________New Session {DateTime.Now}_______________________________________________________________________________";
 
         public static void CheckLogFileExists()
         {
-            if (!File.Exists(log))
-                File.Create(log).Close();
+            if (!File.Exists(Log))
+                File.Create(Log).Close();
 
-            if (!File.Exists(fehlerLog))
-                File.Create(fehlerLog).Close();
+            if (!File.Exists(FehlerLog))
+                File.Create(FehlerLog).Close();
 
 
-            using (var writer = new StreamWriter(log, true))
+            using (var writer = new StreamWriter(Log, true))
             {
-                writer.WriteLine(start);
+                writer.WriteLine(Start);
             }
         }
 
         public static void WriteLogLine(string text)
         {
             lock (LoggerLock)
-                using (var writer = new StreamWriter(log, true))
+                using (var writer = new StreamWriter(Log, true))
                 {
                     writer.WriteLine(text);
                 }
@@ -41,7 +37,7 @@ namespace NAS.Updater
         public static void WriteFailureLine(string text)
         {
             lock(LoggerLock)
-                using (var writer = new StreamWriter(fehlerLog, true))
+                using (var writer = new StreamWriter(FehlerLog, true))
                 {
                     writer.WriteLine($"Session: {DateTime.Now}");
                     writer.WriteLine(text);
