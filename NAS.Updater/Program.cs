@@ -25,18 +25,17 @@ namespace NAS.Updater
             if (args.Any())
             {
 
-                if (args.ElementAt(0) == "man")
+                if (args.ElementAt(0) == "man" || args.ElementAt(0) == "-?" || args.ElementAt(0) == "-help")
                 {
                     MessageBox.Show($"Zum Pfad hinzufuegen -a \"Lokaler Ordnerpfad\" nutzen");
                 }
                 else
                 {
-                    var str = args.ElementAt(0);
-                    var nstr = args.ElementAt(1);
+                    var nstr =  args.ElementAt(1);
                     var combo = new SpeicherPfadCombo
                     {
                         Lokal = nstr,
-                        Nas = NasPfad + Path.GetFileName(nstr),
+                        Nas = NasPfad + "\\" + Path.GetFileName(nstr),
                     };
 
                     if (Directory.Exists(nstr))
