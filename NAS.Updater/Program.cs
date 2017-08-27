@@ -18,7 +18,7 @@ namespace NAS.Updater
             var tr = new Tray();
 
             var serializer = new Serializer();
-            var list = serializer.LadeDaten<List<SpeicherPfadCombo>>("Pfade.txt") ?? new List<SpeicherPfadCombo>();
+            var list = serializer.Load<List<SpeicherPfadCombo>>("Pfade.txt") ?? new List<SpeicherPfadCombo>();
             list = list.Distinct().ToList();
 
 
@@ -31,7 +31,9 @@ namespace NAS.Updater
                 }
                 else
                 {
-                    var nstr =  args.ElementAt(1);
+                    args[0] = string.Empty;
+                    var nstr = args.Aggregate((m, n) => m + " " + n);
+
                     var combo = new SpeicherPfadCombo
                     {
                         Lokal = nstr,
@@ -45,7 +47,7 @@ namespace NAS.Updater
                             list.Add(combo);
 
 
-                        serializer.SpeichereDaten("Pfade.txt", list);
+                        serializer.Save("Pfade.txt", list);
                         MessageBox.Show("Erfolgreich hinzugefügt", "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     }
                     else
