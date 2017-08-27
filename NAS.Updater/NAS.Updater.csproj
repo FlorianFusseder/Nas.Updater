@@ -56,7 +56,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Persistenz">
-      <HintPath>..\..\..\C# DLLs\Persistenz\Persistenz\bin\Debug\Persistenz.dll</HintPath>
+      <HintPath>..\..\..\C# DLLs\Persistence\Persistence\bin\Debug\Persistenz.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
